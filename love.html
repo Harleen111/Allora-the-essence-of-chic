@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            overflow-x: hidden;
+            text-align: center;
+        }
+
+       
+.header-bar {
+    background-image: url('header.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    color: #fff; 
+}
+
+.header-bar .container1 {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+}
+
+.header-bar .header-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-bar .header-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+    transition: color 0.3s ease;
+}
+
+.header-bar .header-links a:hover {
+    color: #100f0f; 
+}
+
+
+.header-bar .divider {
+    color: rgba(255, 255, 255, 0.6); 
+}
+
+
+.header-bar i {
+    font-size: 18px;
+}
+
+.second-header {
+    background-color: #fff;
+    padding: 20px 20px;
+    border-bottom: 1px solid #e5e5e5;
+    font-family: Arial, sans-serif;
+}
+
+.second-header .container1 {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+
+.second-header .logo h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    color: #ff5a83;
+    margin: 0;
+}
+
+
+.second-header .nav-links {
+    display: flex;
+    gap: 40px; 
+}
+
+.second-header .nav-links a {
+    text-decoration: none;
+    color: #2c2c2c;
+    font-size: 16px; 
+    font-weight: bold;
+    transition: color 0.3s ease; 
+}
+
+.second-header .nav-links a:hover {
+    color: #ff5a83; }
+
+
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 300px; 
+}
+
+.search-box input {
+    border: none;
+    padding: 8px 12px; 
+    font-size: 14px;
+    outline: none;
+    width: 100%;
+}
+
+.search-box button {
+    border: none;
+    background: #ff5a83;
+    color: #fff;
+    padding: 8px 12px; 
+    cursor: pointer;
+}
+
+
+.sign-in-btn {
+    background-color: #ff5a83;
+    color: #fff;
+    border: none;
+    padding: 10px 20px; 
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; 
+    font-weight: bold;
+}
+
+.sign-in-btn:hover {
+    background-color: #e04b71;
+}
+
+
+.cart-icon {
+    color: #2c2c2c;
+    font-size: 22px; 
+    text-decoration: none;
+    margin-left: 20px; 
+}
+
+.cart-icon:hover {
+    color: #ff5a83;
+}
+
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 70px;
+            max-width: 1500px;
+            margin: 50px auto;
+            background-color: #fbcfe8;
+            padding: 20px;
+            border-radius: 15px;
+        }
+        
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .discount {
+            color: #d946ef;
+            font-weight: bold;
+        }
+
+        .details {
+            color: gray;
+            font-size: 14px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #d4006a;
+            color: white;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header-bar">
+        <div class="container1">
+            <div class="header-links">
+                <a href="#"><i class="fa fa-mobile-alt"></i> Get App</a>
+                <span class="divider">|</span>
+                <a href="#"><i class="fa fa-map-marker-alt"></i> Store & Events</a>
+                <span class="divider">|</span>
+                <a href="#"><i class="fa fa-gift"></i> Gift Card</a>
+                <span class="divider">|</span>
+                <a href="#"><i class="fa fa-question-circle"></i> Help</a>
+            </div>
+        </div>
+    </header>
+    
+    <header class="second-header">
+        <div class="container1">
+            
+            <div class="logo">
+                <h1>Allora</h1>
+            </div>
+    
+            
+            <nav class="nav-links">
+                <a href="category.html">Categories</a>
+                <a href="#">Brands</a>
+                <a href="#">Luxe</a>
+                <a href="#">Beauty Advice</a>
+            </nav>
+    
+            
+            <div class="header-right">
+                <div class="search-box">
+                    <input type="text" placeholder="Search for Allora" />
+                    <button><i class="fa fa-search"></i></button>
+                </div>
+                <button class="sign-in-btn">Sign In</button>
+                <a href="#" class="cart-icon"><i class="fa fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </header>
+    <h1 class="header">Swoon-Worthy Deals</h1>
+    <div class="container">
+        <a href="redken.html"><div class="card"><img src="Redken.png" alt="Redken"><div class="title"></div><div class="discount">Up to 25% Off</div><div class="details"> 2 Gifts on All ₹2500+</div></div></a>
+        <a href="ga.html">
+        <div class="card"><img src="GA.png" alt="Giorgio Armani"><div class="title"></div><div class="discount">Flat 10% Off</div><div class="details">On Entire Range</div></div></a>
+        <a href="ga.html">
+        <div class="card"><img src="eliff.png" alt="Belif"><div class="title"></div><div class="discount">Up to 20% Off</div><div class="details">Free Gift on ₹1499+</div></div></a>
+        <a href="ga.html">
+        <div class="card"><img src="huda.png" alt="Huda Beauty"><div class="title"></div><div class="discount">Up to 40% Off</div><div class="details">On Bestsellers</div></div></a>
+        <a href="ga.html">
+        <div class="card"><img src="lancome.png" alt="Lancome Beauty"><div class="title"></div><div class="discount">Flat 15% Off</div><div class="details">Buy 2 Get 20% Off</div></div></a>
+        <a href="ga.html"><div class="card"><img src="Urban decay.png" alt="Urban decay"><div class="title"></div><div class="discount">Up to 30% Off</div><div class="details">On Bestsellers</div></div></a>
+        <a href="ga.html"><div class="card"><img src="kiehl's.png" alt="kiehl's"><div class="title"></div><div class="discount">Flat 15% Off</div><div class="details">Buy 2 Get 20% Off</div></div></a>
+        <a href="ga.html"><div class="card"><img src="YSL.png" alt="YSL"><div class="title"></div><div class="discount">up to 10% Off</div><div class="details">Bestsellers Vial on All Orders</div></div></a>
+        <a href="ga.html"><div class="card"><img src="Estee Lauder.png" alt="Estee Lauder"><div class="title"></div><div class="discount">Up to 25% Off</div><div class="details">On 4-PC On ₹5000 </div></div></a>
+        <a href="ga.html"><div class="card"><img src="c&t.png" alt="Charlotte Tilbury"><div class="title"></div><div class="discount">Flat 15% Off</div><div class="details">On Bestsellers</div></div></a>
+        <a href="ga.html"><div class="card"><img src="Sol de janeiro.png" alt="Sol De janeiro"><div class="title"></div><div class="discount">2 Minis on ₹2600</div><div class="details">Gifts on All Orders</div></div></a>
+        <a href="ga.html"><div class="card"><img src="Nars.png" alt="Nars"><div class="title"></div><div class="discount">Flat 15% Off</div><div class="details">Free Gifts on All Orders</div></div></a>
+        <a href="ga.html"><div class="card"><img src="Burberry.png" alt="Burberry"><div class="title"></div><div class="discount">Free Gifts</div><div class="details">On Checkout</div></div></a>
+        <a href="ga.html"><div class="card"><img src="Nudestick.png" alt="Nudestick"><div class="title"></div><div class="discount">Flat 30% Off</div><div class="details">On Bestsellers</div></div></a>
+        <a href="ga.html"><div class="card"><img src="Kerastase.png" alt="Kerastase"><div class="title"></div><div class="discount">Gifts Worth ₹1200</div><div class="details">On Order above ₹3999</div></div></a>
+
+    </div>
+    <div class="footer">&copy; 2025 Allora Luxe | Luxury Beauty, Redefined.</div>
+</body>
+</html>
