@@ -91,24 +91,21 @@ function toggleStep(event) {
   const target = event.target.closest('div');
   const steps = ['#singup', '#addres_nav', '#payment'];
 
-  // Remove active class from all steps
+  
   steps.forEach(step => {
     document.querySelector(step).classList.remove("active");
   });
 
-  // Add active class to clicked step
+  
   target.classList.add("active");
 
-  // Show the respective content for the selected step
+ 
   const stepId = target.id;
   if (stepId === "singup") {
-    // Show or update the signup content
-    // Example: document.querySelector("#signup-content").style.display = "block";
+   
   } else if (stepId === "addres_nav") {
-    // Show or update the address content
-    // Example: document.querySelector("#address-content").style.display = "block";
+    
   } else if (stepId === "payment") {
-    // Show or update the payment content
-    // Example: document.querySelector("#payment-content").style.display = "block";
+    
   }
 }

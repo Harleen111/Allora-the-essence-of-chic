@@ -1,4 +1,3 @@
-// take new address 
 var first_check = JSON.parse(localStorage.getItem("address")) || [];
 
 if(first_check.length < 1){
@@ -91,7 +90,7 @@ function gopayment(){
     var area = document.getElementById("area").value;
     var house = document.getElementById("house").value;
     var pin = document.getElementById("pin").value;
-    if(name ==="" || pin === "" || number.length > 10){
+    if(number ==="" || pin === "" || number.length > 10){
 alert("please fill the correct details")
 return ;
     }
